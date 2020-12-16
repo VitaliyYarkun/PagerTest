@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+inhibit_all_warnings!
+
+target 'PagerTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+    
+  # Pods for PagerTest
+  pod 'Texture', '~> 3.0'
+  pod 'PromiseKit', '~> 6.8'
+end

@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78BBD1BF67087390C4791427 /* Pods_PagerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF56CEB6E3F938F97825D0F5 /* Pods_PagerTest.framework */; };
+		EEA444DD258A6E7D001E838E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA444DC258A6E7D001E838E /* AppDelegate.swift */; };
+		EEA444E6258A6E7F001E838E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA444E5258A6E7F001E838E /* Assets.xcassets */; };
+		EEA444E9258A6E7F001E838E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA444E7258A6E7F001E838E /* LaunchScreen.storyboard */; };
+		EEA4451D258A8462001E838E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA44519258A8462001E838E /* ViewController.swift */; };
+		EEA4451E258A8462001E838E /* ViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4451A258A8462001E838E /* ViewNode.swift */; };
+		EEA4451F258A8462001E838E /* PagerCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4451B258A8462001E838E /* PagerCellNode.swift */; };
+		EEA44520258A8462001E838E /* PagerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA4451C258A8462001E838E /* PagerNode.swift */; };
+		EEA44528258A8AC2001E838E /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA44527258A8AC2001E838E /* PageModel.swift */; };
+		EEA44554258A8D3D001E838E /* SF-Pro-Text-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4452E258A8D3D001E838E /* SF-Pro-Text-UltralightItalic.otf */; };
+		EEA44555258A8D3D001E838E /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4452F258A8D3D001E838E /* SF-Pro-Text-Heavy.otf */; };
+		EEA44556258A8D3D001E838E /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44530258A8D3D001E838E /* SF-Pro-Text-MediumItalic.otf */; };
+		EEA44557258A8D3D001E838E /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44531258A8D3D001E838E /* SF-Pro-Text-Light.otf */; };
+		EEA44558258A8D3D001E838E /* SF-Pro-Text-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44532258A8D3D001E838E /* SF-Pro-Text-BlackItalic.otf */; };
+		EEA44559258A8D3D001E838E /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44533258A8D3D001E838E /* SF-Pro-Text-Black.otf */; };
+		EEA4455A258A8D3D001E838E /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44534258A8D3D001E838E /* SF-Pro-Text-Regular.otf */; };
+		EEA4455B258A8D3D001E838E /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44535258A8D3D001E838E /* SF-Pro-Text-Ultralight.otf */; };
+		EEA4455C258A8D3D001E838E /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44536258A8D3D001E838E /* SF-Pro-Text-Bold.otf */; };
+		EEA4455D258A8D3D001E838E /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44537258A8D3D001E838E /* SF-Pro-Text-Thin.otf */; };
+		EEA4455E258A8D3D001E838E /* SF-Pro-Text-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44538258A8D3D001E838E /* SF-Pro-Text-ThinItalic.otf */; };
+		EEA4455F258A8D3D001E838E /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44539258A8D3D001E838E /* SF-Pro-Text-BoldItalic.otf */; };
+		EEA44560258A8D3D001E838E /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4453A258A8D3D001E838E /* SF-Pro-Text-RegularItalic.otf */; };
+		EEA44561258A8D3D001E838E /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4453B258A8D3D001E838E /* SF-Pro-Text-Semibold.otf */; };
+		EEA44562258A8D3D001E838E /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4453C258A8D3D001E838E /* SF-Pro-Text-HeavyItalic.otf */; };
+		EEA44563258A8D3D001E838E /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4453D258A8D3D001E838E /* SF-Pro-Text-LightItalic.otf */; };
+		EEA44564258A8D3D001E838E /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4453E258A8D3D001E838E /* SF-Pro-Text-Medium.otf */; };
+		EEA44565258A8D3D001E838E /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4453F258A8D3D001E838E /* SF-Pro-Text-SemiboldItalic.otf */; };
+		EEA44566258A8D3D001E838E /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44541258A8D3D001E838E /* Poppins-ExtraLight.ttf */; };
+		EEA44567258A8D3D001E838E /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44542258A8D3D001E838E /* Poppins-ThinItalic.ttf */; };
+		EEA44568258A8D3D001E838E /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44543258A8D3D001E838E /* Poppins-ExtraLightItalic.ttf */; };
+		EEA44569258A8D3D001E838E /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44544258A8D3D001E838E /* Poppins-BoldItalic.ttf */; };
+		EEA4456A258A8D3D001E838E /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44545258A8D3D001E838E /* Poppins-Light.ttf */; };
+		EEA4456B258A8D3D001E838E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44546258A8D3D001E838E /* Poppins-Medium.ttf */; };
+		EEA4456C258A8D3D001E838E /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44547258A8D3D001E838E /* Poppins-SemiBoldItalic.ttf */; };
+		EEA4456D258A8D3D001E838E /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44548258A8D3D001E838E /* Poppins-ExtraBoldItalic.ttf */; };
+		EEA4456E258A8D3D001E838E /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44549258A8D3D001E838E /* Poppins-ExtraBold.ttf */; };
+		EEA4456F258A8D3D001E838E /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4454A258A8D3D001E838E /* Poppins-BlackItalic.ttf */; };
+		EEA44570258A8D3D001E838E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = EEA4454B258A8D3D001E838E /* OFL.txt */; };
+		EEA44571258A8D3D001E838E /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4454C258A8D3D001E838E /* Poppins-Regular.ttf */; };
+		EEA44572258A8D3D001E838E /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4454D258A8D3D001E838E /* Poppins-LightItalic.ttf */; };
+		EEA44573258A8D3D001E838E /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4454E258A8D3D001E838E /* Poppins-Bold.ttf */; };
+		EEA44574258A8D3D001E838E /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA4454F258A8D3D001E838E /* Poppins-Black.ttf */; };
+		EEA44575258A8D3D001E838E /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44550258A8D3D001E838E /* Poppins-Thin.ttf */; };
+		EEA44576258A8D3D001E838E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44551258A8D3D001E838E /* Poppins-SemiBold.ttf */; };
+		EEA44577258A8D3D001E838E /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44552258A8D3D001E838E /* Poppins-Italic.ttf */; };
+		EEA44578258A8D3D001E838E /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEA44553258A8D3D001E838E /* Poppins-MediumItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39EF1FD1E83F86EB2AE8BF83 /* Pods-PagerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagerTest.debug.xcconfig"; path = "Target Support Files/Pods-PagerTest/Pods-PagerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		6D8E5D33553BEE169EBFA575 /* Pods-PagerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagerTest.release.xcconfig"; path = "Target Support Files/Pods-PagerTest/Pods-PagerTest.release.xcconfig"; sourceTree = "<group>"; };
+		AF56CEB6E3F938F97825D0F5 /* Pods_PagerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA444D9258A6E7D001E838E /* PagerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA444DC258A6E7D001E838E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEA444E5258A6E7F001E838E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEA444E8258A6E7F001E838E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEA444EA258A6E7F001E838E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA44519258A8462001E838E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEA4451A258A8462001E838E /* ViewNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewNode.swift; sourceTree = "<group>"; };
+		EEA4451B258A8462001E838E /* PagerCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerCellNode.swift; sourceTree = "<group>"; };
+		EEA4451C258A8462001E838E /* PagerNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerNode.swift; sourceTree = "<group>"; };
+		EEA44527258A8AC2001E838E /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		EEA4452E258A8D3D001E838E /* SF-Pro-Text-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-UltralightItalic.otf"; sourceTree = "<group>"; };
+		EEA4452F258A8D3D001E838E /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		EEA44530258A8D3D001E838E /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		EEA44531258A8D3D001E838E /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		EEA44532258A8D3D001E838E /* SF-Pro-Text-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BlackItalic.otf"; sourceTree = "<group>"; };
+		EEA44533258A8D3D001E838E /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
+		EEA44534258A8D3D001E838E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		EEA44535258A8D3D001E838E /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
+		EEA44536258A8D3D001E838E /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		EEA44537258A8D3D001E838E /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
+		EEA44538258A8D3D001E838E /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
+		EEA44539258A8D3D001E838E /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		EEA4453A258A8D3D001E838E /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		EEA4453B258A8D3D001E838E /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		EEA4453C258A8D3D001E838E /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		EEA4453D258A8D3D001E838E /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		EEA4453E258A8D3D001E838E /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		EEA4453F258A8D3D001E838E /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		EEA44541258A8D3D001E838E /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		EEA44542258A8D3D001E838E /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		EEA44543258A8D3D001E838E /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		EEA44544258A8D3D001E838E /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EEA44545258A8D3D001E838E /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		EEA44546258A8D3D001E838E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		EEA44547258A8D3D001E838E /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		EEA44548258A8D3D001E838E /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		EEA44549258A8D3D001E838E /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		EEA4454A258A8D3D001E838E /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		EEA4454B258A8D3D001E838E /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		EEA4454C258A8D3D001E838E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		EEA4454D258A8D3D001E838E /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		EEA4454E258A8D3D001E838E /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		EEA4454F258A8D3D001E838E /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		EEA44550258A8D3D001E838E /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		EEA44551258A8D3D001E838E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		EEA44552258A8D3D001E838E /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		EEA44553258A8D3D001E838E /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEA444D6258A6E7D001E838E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78BBD1BF67087390C4791427 /* Pods_PagerTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		414D8CE0E61C104C46609340 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF56CEB6E3F938F97825D0F5 /* Pods_PagerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72B0F8C1935468D04FD27C14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39EF1FD1E83F86EB2AE8BF83 /* Pods-PagerTest.debug.xcconfig */,
+				6D8E5D33553BEE169EBFA575 /* Pods-PagerTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EEA444D0258A6E7D001E838E = {
+			isa = PBXGroup;
+			children = (
+				EEA444DB258A6E7D001E838E /* PagerTest */,
+				EEA444DA258A6E7D001E838E /* Products */,
+				72B0F8C1935468D04FD27C14 /* Pods */,
+				414D8CE0E61C104C46609340 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEA444DA258A6E7D001E838E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEA444D9258A6E7D001E838E /* PagerTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEA444DB258A6E7D001E838E /* PagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				EEA4452C258A8D3D001E838E /* Fonts */,
+				EEA44518258A8462001E838E /* ViewControllers */,
+				EEA444DC258A6E7D001E838E /* AppDelegate.swift */,
+				EEA444E5258A6E7F001E838E /* Assets.xcassets */,
+				EEA444E7258A6E7F001E838E /* LaunchScreen.storyboard */,
+				EEA444EA258A6E7F001E838E /* Info.plist */,
+			);
+			path = PagerTest;
+			sourceTree = "<group>";
+		};
+		EEA44518258A8462001E838E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEA44519258A8462001E838E /* ViewController.swift */,
+				EEA4451A258A8462001E838E /* ViewNode.swift */,
+				EEA44527258A8AC2001E838E /* PageModel.swift */,
+				EEA4451B258A8462001E838E /* PagerCellNode.swift */,
+				EEA4451C258A8462001E838E /* PagerNode.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEA4452C258A8D3D001E838E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EEA4452D258A8D3D001E838E /* SFProText */,
+				EEA44540258A8D3D001E838E /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EEA4452D258A8D3D001E838E /* SFProText */ = {
+			isa = PBXGroup;
+			children = (
+				EEA4452E258A8D3D001E838E /* SF-Pro-Text-UltralightItalic.otf */,
+				EEA4452F258A8D3D001E838E /* SF-Pro-Text-Heavy.otf */,
+				EEA44530258A8D3D001E838E /* SF-Pro-Text-MediumItalic.otf */,
+				EEA44531258A8D3D001E838E /* SF-Pro-Text-Light.otf */,
+				EEA44532258A8D3D001E838E /* SF-Pro-Text-BlackItalic.otf */,
+				EEA44533258A8D3D001E838E /* SF-Pro-Text-Black.otf */,
+				EEA44534258A8D3D001E838E /* SF-Pro-Text-Regular.otf */,
+				EEA44535258A8D3D001E838E /* SF-Pro-Text-Ultralight.otf */,
+				EEA44536258A8D3D001E838E /* SF-Pro-Text-Bold.otf */,
+				EEA44537258A8D3D001E838E /* SF-Pro-Text-Thin.otf */,
+				EEA44538258A8D3D001E838E /* SF-Pro-Text-ThinItalic.otf */,
+				EEA44539258A8D3D001E838E /* SF-Pro-Text-BoldItalic.otf */,
+				EEA4453A258A8D3D001E838E /* SF-Pro-Text-RegularItalic.otf */,
+				EEA4453B258A8D3D001E838E /* SF-Pro-Text-Semibold.otf */,
+				EEA4453C258A8D3D001E838E /* SF-Pro-Text-HeavyItalic.otf */,
+				EEA4453D258A8D3D001E838E /* SF-Pro-Text-LightItalic.otf */,
+				EEA4453E258A8D3D001E838E /* SF-Pro-Text-Medium.otf */,
+				EEA4453F258A8D3D001E838E /* SF-Pro-Text-SemiboldItalic.otf */,
+			);
+			path = SFProText;
+			sourceTree = "<group>";
+		};
+		EEA44540258A8D3D001E838E /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				EEA44541258A8D3D001E838E /* Poppins-ExtraLight.ttf */,
+				EEA44542258A8D3D001E838E /* Poppins-ThinItalic.ttf */,
+				EEA44543258A8D3D001E838E /* Poppins-ExtraLightItalic.ttf */,
+				EEA44544258A8D3D001E838E /* Poppins-BoldItalic.ttf */,
+				EEA44545258A8D3D001E838E /* Poppins-Light.ttf */,
+				EEA44546258A8D3D001E838E /* Poppins-Medium.ttf */,
+				EEA44547258A8D3D001E838E /* Poppins-SemiBoldItalic.ttf */,
+				EEA44548258A8D3D001E838E /* Poppins-ExtraBoldItalic.ttf */,
+				EEA44549258A8D3D001E838E /* Poppins-ExtraBold.ttf */,
+				EEA4454A258A8D3D001E838E /* Poppins-BlackItalic.ttf */,
+				EEA4454B258A8D3D001E838E /* OFL.txt */,
+				EEA4454C258A8D3D001E838E /* Poppins-Regular.ttf */,
+				EEA4454D258A8D3D001E838E /* Poppins-LightItalic.ttf */,
+				EEA4454E258A8D3D001E838E /* Poppins-Bold.ttf */,
+				EEA4454F258A8D3D001E838E /* Poppins-Black.ttf */,
+				EEA44550258A8D3D001E838E /* Poppins-Thin.ttf */,
+				EEA44551258A8D3D001E838E /* Poppins-SemiBold.ttf */,
+				EEA44552258A8D3D001E838E /* Poppins-Italic.ttf */,
+				EEA44553258A8D3D001E838E /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEA444D8258A6E7D001E838E /* PagerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA444ED258A6E7F001E838E /* Build configuration list for PBXNativeTarget "PagerTest" */;
+			buildPhases = (
+				9DE3BFCEBFA498F8558AAA7A /* [CP] Check Pods Manifest.lock */,
+				EEA444D5258A6E7D001E838E /* Sources */,
+				EEA444D6258A6E7D001E838E /* Frameworks */,
+				EEA444D7258A6E7D001E838E /* Resources */,
+				86D8990AA901F931BB42E17E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagerTest;
+			productName = PagerTest;
+			productReference = EEA444D9258A6E7D001E838E /* PagerTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEA444D1258A6E7D001E838E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					EEA444D8258A6E7D001E838E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = EEA444D4258A6E7D001E838E /* Build configuration list for PBXProject "PagerTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEA444D0258A6E7D001E838E;
+			productRefGroup = EEA444DA258A6E7D001E838E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEA444D8258A6E7D001E838E /* PagerTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEA444D7258A6E7D001E838E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA44568258A8D3D001E838E /* Poppins-ExtraLightItalic.ttf in Resources */,
+				EEA4456A258A8D3D001E838E /* Poppins-Light.ttf in Resources */,
+				EEA44573258A8D3D001E838E /* Poppins-Bold.ttf in Resources */,
+				EEA4455E258A8D3D001E838E /* SF-Pro-Text-ThinItalic.otf in Resources */,
+				EEA44556258A8D3D001E838E /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				EEA44576258A8D3D001E838E /* Poppins-SemiBold.ttf in Resources */,
+				EEA44560258A8D3D001E838E /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				EEA44559258A8D3D001E838E /* SF-Pro-Text-Black.otf in Resources */,
+				EEA4456B258A8D3D001E838E /* Poppins-Medium.ttf in Resources */,
+				EEA44578258A8D3D001E838E /* Poppins-MediumItalic.ttf in Resources */,
+				EEA44565258A8D3D001E838E /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				EEA4455C258A8D3D001E838E /* SF-Pro-Text-Bold.otf in Resources */,
+				EEA44562258A8D3D001E838E /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				EEA444E9258A6E7F001E838E /* LaunchScreen.storyboard in Resources */,
+				EEA444E6258A6E7F001E838E /* Assets.xcassets in Resources */,
+				EEA44564258A8D3D001E838E /* SF-Pro-Text-Medium.otf in Resources */,
+				EEA44558258A8D3D001E838E /* SF-Pro-Text-BlackItalic.otf in Resources */,
+				EEA44561258A8D3D001E838E /* SF-Pro-Text-Semibold.otf in Resources */,
+				EEA44555258A8D3D001E838E /* SF-Pro-Text-Heavy.otf in Resources */,
+				EEA4456E258A8D3D001E838E /* Poppins-ExtraBold.ttf in Resources */,
+				EEA44572258A8D3D001E838E /* Poppins-LightItalic.ttf in Resources */,
+				EEA4455B258A8D3D001E838E /* SF-Pro-Text-Ultralight.otf in Resources */,
+				EEA4456C258A8D3D001E838E /* Poppins-SemiBoldItalic.ttf in Resources */,
+				EEA44563258A8D3D001E838E /* SF-Pro-Text-LightItalic.otf in Resources */,
+				EEA4455A258A8D3D001E838E /* SF-Pro-Text-Regular.otf in Resources */,
+				EEA4455D258A8D3D001E838E /* SF-Pro-Text-Thin.otf in Resources */,
+				EEA44574258A8D3D001E838E /* Poppins-Black.ttf in Resources */,
+				EEA44570258A8D3D001E838E /* OFL.txt in Resources */,
+				EEA44554258A8D3D001E838E /* SF-Pro-Text-UltralightItalic.otf in Resources */,
+				EEA44569258A8D3D001E838E /* Poppins-BoldItalic.ttf in Resources */,
+				EEA44566258A8D3D001E838E /* Poppins-ExtraLight.ttf in Resources */,
+				EEA44557258A8D3D001E838E /* SF-Pro-Text-Light.otf in Resources */,
+				EEA44567258A8D3D001E838E /* Poppins-ThinItalic.ttf in Resources */,
+				EEA44575258A8D3D001E838E /* Poppins-Thin.ttf in Resources */,
+				EEA44577258A8D3D001E838E /* Poppins-Italic.ttf in Resources */,
+				EEA4455F258A8D3D001E838E /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				EEA4456F258A8D3D001E838E /* Poppins-BlackItalic.ttf in Resources */,
+				EEA44571258A8D3D001E838E /* Poppins-Regular.ttf in Resources */,
+				EEA4456D258A8D3D001E838E /* Poppins-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86D8990AA901F931BB42E17E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PagerTest/Pods-PagerTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PagerTest/Pods-PagerTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PagerTest/Pods-PagerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE3BFCEBFA498F8558AAA7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PagerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEA444D5258A6E7D001E838E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEA44520258A8462001E838E /* PagerNode.swift in Sources */,
+				EEA4451D258A8462001E838E /* ViewController.swift in Sources */,
+				EEA444DD258A6E7D001E838E /* AppDelegate.swift in Sources */,
+				EEA4451E258A8462001E838E /* ViewNode.swift in Sources */,
+				EEA4451F258A8462001E838E /* PagerCellNode.swift in Sources */,
+				EEA44528258A8AC2001E838E /* PageModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEA444E7258A6E7F001E838E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEA444E8258A6E7F001E838E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEA444EB258A6E7F001E838E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEA444EC258A6E7F001E838E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEA444EE258A6E7F001E838E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39EF1FD1E83F86EB2AE8BF83 /* Pods-PagerTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6S6377H4G;
+				INFOPLIST_FILE = PagerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.pager.PagerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EEA444EF258A6E7F001E838E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D8E5D33553BEE169EBFA575 /* Pods-PagerTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S6S6377H4G;
+				INFOPLIST_FILE = PagerTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.pager.PagerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEA444D4258A6E7D001E838E /* Build configuration list for PBXProject "PagerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA444EB258A6E7F001E838E /* Debug */,
+				EEA444EC258A6E7F001E838E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA444ED258A6E7F001E838E /* Build configuration list for PBXNativeTarget "PagerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA444EE258A6E7F001E838E /* Debug */,
+				EEA444EF258A6E7F001E838E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEA444D1258A6E7D001E838E /* Project object */;
+}

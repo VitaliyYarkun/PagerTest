@@ -1,0 +1,6 @@
+framework module Pods_PagerTest {
+  umbrella header "Pods-PagerTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
